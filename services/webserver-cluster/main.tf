@@ -175,7 +175,7 @@ resource "aws_lb" "myalb" {
   security_groups    = [aws_security_group.mysg.id]
 
   tags = {
-    Name = "t101-alb"
+    Name = "t101-alb-${var.environment}"
   }
 }
 
